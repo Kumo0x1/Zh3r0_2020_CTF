@@ -125,7 +125,7 @@ Firstly we need to factorize ```N``` by using [Integer factorization calculator]
 
 ![](Assets//images/RSA-Warmup_1.png)
 
-We can choose eaither the highlited value or the one after ```x``` , then we need to remove all whitespaces from that value we choosed I use this website [Delete All Whitespace Characters](https://www.browserling.com/tools/remove-all-whitespace) 
+We can choose eaither the highlighted value or the one after ```x``` , then we need to remove all whitespaces from that value we choosed I use this website [Delete All Whitespace Characters](https://www.browserling.com/tools/remove-all-whitespace) 
 
 
 Then you can use any RSA tool but I prefer this one that I got from a write-up video on YouTube [BabyRSADecryption.py](https://www.youtube.com/watch?v=dKt0x-UhPeY)
