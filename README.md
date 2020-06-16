@@ -86,7 +86,7 @@ steghide extract -sf Trollface.jpg
 ```
 It extracted a zip file that contains another image
 
-![](Assets//images/is_it_a_troll_3.png
+![](Assets//images/is_it_a_troll_3.png)
 
 I tried usual things such as ```strings, exiftool etc..``` but again nothing interested , then I used [zsteg](https://github.com/zed-0xff/zsteg) which is a great tool for ```.png``` and ```.bmp```. I got a strange text again that looks encrypted
 
@@ -134,7 +134,7 @@ Then you can use any RSA tool but I prefer this one that I got from a write-up v
 
 ![](Assets//images/RSA-Warmup_2.png)
 
-**flag: ** ```zh3r0{RSA_1s_Fun}``` 
+**flag:**```zh3r0{RSA_1s_Fun}``` 
 
 
 
