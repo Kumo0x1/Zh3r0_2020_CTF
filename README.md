@@ -1,7 +1,7 @@
 # Z3hr0_CTF_2020
 
 <p align="center">
-  <img width=200 src="Assets//images/logo.gif">
+  <img width=280 src="Assets//images/logo.gif">
 </p>
 
 ***
