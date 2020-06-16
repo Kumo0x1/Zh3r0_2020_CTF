@@ -11,7 +11,9 @@
   - [LSB fun](#LSB-fun)
   - [Snow](#Snow)
   - [is it a troll???](#is-it-a-troll???)
-  
+ 
+* [Crypto](#Crypto)
+  - [RSA-Warmup](#RSA-Warmup)
 ***
  
 # Forensics
@@ -100,8 +102,37 @@ So again using [CyberChef](https://gchq.github.io/CyberChef/) I tried all Bases 
 **flag:**```zh3ro{y0u_got_th3_k3y}```
 
 
+# Crypto
+
+## RSA-Warmup
+RSA is one of the first public-key cryptosystems and is widely used for secure data transmission. In such a cryptosystem, the encryption key is public and distinct from the decryption key which is kept secret.
+You all know this :p
+here is a warmup question.
+
+nc crypto.zh3r0.ml 8451
+
+Author : Finch
+
+After connecting we will get :
+```
+N:423130325547287702818575275911638514089000677312397089081805057991969030705298706721977584791771140221048428491277072574621931762053228292827558133848431392100907341475739701625443407159362865290713505269417296254943824301579820381205337075166450305894211548942250717365528936705397266131955244020850392151721662069939
+e 65537
+CT: 64355745797365388490412995076301513621958191046794834306956838312585280589421173619216473785642127494178580195654010801071081452854241462208557812725513288017128104994318837129257203983692773852306990540483172991569629801482576680150381602438163038587331616025889766347178216490112604297980040248921138616716362273714
 
 
+```
+Firstly we need to factorize ```N``` by using [Integer factorization calculator](https://www.alpertron.com.ar/ECM.HTM)
+
+![](Assets//images/RSA-Warmup_1.png)
+
+We can choose eaither the highlited value or the one after ```x``` , then we need to remove all whitespaces from that value we choosed I use this website [Delete All Whitespace Characters](https://www.browserling.com/tools/remove-all-whitespace) 
+
+
+Then you can use any RSA tool but I prefer this one that I got from a write-up video on YouTube [BabyRSADecryption.py](https://www.youtube.com/watch?v=dKt0x-UhPeY)
+
+![](Assets//images/RSA-Warmup_2.png)
+
+**flag: zh3r0{RSA_1s_Fun} **
 
 
 
