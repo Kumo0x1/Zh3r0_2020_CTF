@@ -26,7 +26,7 @@ file : [user.zip](Assets//Files/user.zip)
 
 **Solution:**
  
-After you unzip the file you'll get a jpg image, the first thing comes to my mind is to use [jsteg](https://github.com/lukechampine/jsteg)
+After you unzip the file you'll get a jpg image, the first thing came to my mind is to use [jsteg](https://github.com/lukechampine/jsteg)
 ```bash
 jsteg reveal chall.jpg
 ```
@@ -42,18 +42,18 @@ Author : h4x5p4c3
 file : [snow.zip](Assets//Files/snow.zip)
 
 **Solution:**
-I unzipped the file and got some hidden files i tried firstly to check ```flag.txt``` and it wasn't the correct flag
+I unzipped the file and got some hidden files , so I tried firstly to check ```flag.txt``` but it wasn't the correct flag
 
 ![](Assets//images/Snow_1.png)
 
- so I kept checking all hidden files and folders until i got : ```welc0me_to_zh3r0_ctf```
+ so I kept checking all the hidden files and folders until i got : ```welc0me_to_zh3r0_ctf```
 ![](Assets//images/Snow_2.png)
 
- Which is also not the flag, so i went back to the unhidden files ```chall.txt``` , from the name of the challenge we can guess that we should use [stegsnow](https://0x00sec.org/t/steganography-concealing-messages-in-text-files/500) or [snow](http://www.darkside.com.au/snow/)
+which is also not the flag, so i went back to the unhidden files ```chall.txt``` , from the name of the challenge we can guess that we should use [stegsnow](https://0x00sec.org/t/steganography-concealing-messages-in-text-files/500) or [snow](http://www.darkside.com.au/snow/)
 
 ![](Assets//images/Snow_3.png)
 
-This indiactes that we need a password , I tried ```john``` using ```rockyou.txt``` but i got nothing, so I remembered the string that I got from ```.secret.txt``` which was ```welc0me_to_zh3r0_ctf``` 
+This indicates that we need a password , I tried ```john``` using ```rockyou.txt``` but i got nothing, so I remembered the string ```welc0me_to_zh3r0_ctf``` that I got from ```.secret.txt``` which was  
 
 ![](Assets//images/Snow_4.png)
 
@@ -71,11 +71,11 @@ At the beginning I tried ```strings```,```binwalk``` etc.. But nothing intereste
 
 ![](Assets//images/is_it_a_troll_1.png)
 
-There's a text at Author looks encrypted by ```Base64``` ,but that's not true so I tried ```Base58``` and ```Base62``` using [CyberChef](https://gchq.github.io/CyberChef/) and ```Base62``` worked.
+There's a text at Author looks encrypted by ```Base64``` ,but that wasn't true so I tried ```Base58``` and ```Base62``` using [CyberChef](https://gchq.github.io/CyberChef/) and ```Base62``` worked.
 
 ![](Assets//images/is_it_a_troll_2.png)
 
-I got ```pass : itrolledyou``` ,so since it mentioned password I used ```steghide``` tool with ```itrolledyou``` as a password
+I got ```pass : itrolledyou``` ,so since it mentioned password I used [steghide](http://steghide.sourceforge.net/) tool with ```itrolledyou``` as a password
 
 ```bash
 steghide extract -sf Trollface.jpg 
@@ -84,7 +84,7 @@ It extracted a zip file that contains another image
 
 ![](Assets//images/is_it_a_troll_3.png
 
-I tried usual things ```strings, exiftool etc..``` but again nothing interested , then I used [zsteg](https://github.com/zed-0xff/zsteg) which is a great tool for ```png``` and ```bmp```. I got a strange text again that looks encrypted
+I tried usual things such as ```strings, exiftool etc..``` but again nothing interested , then I used [zsteg](https://github.com/zed-0xff/zsteg) which is a great tool for ```.png``` and ```.bmp```. I got a strange text again that looks encrypted
 
 ![](Assets//images/is_it_a_troll_4.png)
 
