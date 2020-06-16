@@ -132,7 +132,7 @@ Then you can use any RSA tool but I prefer this one that I got from a write-up v
 
 ![](Assets//images/RSA-Warmup_2.png)
 
-**flag: zh3r0{RSA_1s_Fun} **
+**flag: ```zh3r0{RSA_1s_Fun}``` **
 
 
 
