@@ -15,7 +15,9 @@
 * [Crypto](#Crypto)
   - [RSA-Warmup](#RSA-Warmup)
 ***
- 
+* [Web](#Web)
+  - [Web-Warmup](#Web-Warmup)
+
 # Forensics
   
 ## LSB fun
@@ -137,4 +139,25 @@ Then you can use any RSA tool but I prefer this one that I got from a write-up v
 **flag:**```zh3r0{RSA_1s_Fun}``` 
 
 
+# Web
+## Web-Warmup
 
+Chall Link : http://web.zh3r0.ml:8080/
+
+Easy peasy.
+
+Author : careless_finch
+ 
+ **Solution""
+ 
+ Firstly we check the page source 
+ 
+![](Assets//images/Web-Warmup_1.png) 
+
+
+As there's nothing interesting , let's check ```bg.css```
+
+
+![](Assets//images/Web-Warmup_2.png) 
+
+**flag:** ```zh3r0{y3s_th1s_1s_w4rmup}```
