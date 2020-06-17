@@ -48,14 +48,14 @@ I unzipped the file and got some hidden files , so I tried firstly to check ```f
 
 ![](Assets//images/Snow_1.png)
 
- so I kept checking all the hidden files and folders until i got : ```welc0me_to_zh3r0_ctf```
+ so I kept checking all the hidden files and folders until I got : ```welc0me_to_zh3r0_ctf```
 ![](Assets//images/Snow_2.png)
 
-which is also not the flag, so i went back to the unhidden files ```chall.txt``` , from the name of the challenge we can guess that we should use [stegsnow](https://0x00sec.org/t/steganography-concealing-messages-in-text-files/500) or [snow](http://www.darkside.com.au/snow/)
+which is also not the flag, so I went back to the unhidden files ```chall.txt``` , from the name of the challenge we can guess that we should use [stegsnow](https://0x00sec.org/t/steganography-concealing-messages-in-text-files/500) or [snow](http://www.darkside.com.au/snow/)
 
 ![](Assets//images/Snow_3.png)
 
-This indicates that we need a password , I tried ```john``` using ```rockyou.txt``` but i got nothing, so I remembered the string ```welc0me_to_zh3r0_ctf``` that I got from ```.secret.txt``` which was  
+This indicates that we need a password , I tried ```john``` using ```rockyou.txt``` but I got nothing, so I remembered the string ```welc0me_to_zh3r0_ctf``` that I got from ```.secret.txt``` which was  
 
 ![](Assets//images/Snow_4.png)
 
@@ -71,7 +71,7 @@ file : [Trollface.jpg](Assets//Files/Trollface.jpg)
 
 **Solution:**
 
-At the beginning I tried ```strings```,```binwalk``` etc.. But nothing interested, so I tried ```exiftool```
+At the beginning I tried ```strings```,```binwalk``` etc.. But nothing interesting, so I tried ```exiftool```
 
 ![](Assets//images/is_it_a_troll_1.png)
 
@@ -81,14 +81,14 @@ There's a text at Author looks encrypted by ```Base64``` ,but that wasn't true s
 
 I got ```pass : itrolledyou``` ,so since it mentioned password I used [steghide](http://steghide.sourceforge.net/) tool with ```itrolledyou``` as a password
 
-```bash
+```
 steghide extract -sf Trollface.jpg 
 ```
 It extracted a zip file that contains another image
 
 ![](Assets//images/is_it_a_troll_3.png)
 
-I tried usual things such as ```strings, exiftool etc..``` but again nothing interested , then I used [zsteg](https://github.com/zed-0xff/zsteg) which is a great tool for ```.png``` and ```.bmp```. I got a strange text again that looks encrypted
+I tried usual things such as ```strings, exiftool etc..``` but again nothing interesting , then I used [zsteg](https://github.com/zed-0xff/zsteg) which is a great tool for ```.png``` and ```.bmp```. I got a strange text again that looks encrypted
 
 ![](Assets//images/is_it_a_troll_4.png)
 
