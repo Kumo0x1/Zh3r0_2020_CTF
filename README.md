@@ -60,7 +60,7 @@ which is also not the flag, so I went back to the unhidden files ```chall.txt```
 
 ![](Assets//images/Snow_3.png)
 
-This indicates that we need a password , I tried ```john``` using ```rockyou.txt``` but I got nothing, so I remembered the string ```welc0me_to_zh3r0_ctf``` that I got from ```.secret.txt``` which was  
+This indicates that we need a password , I tried ```john``` using ```rockyou.txt``` but I got nothing, so I remembered the string ```welc0me_to_zh3r0_ctf``` that I got from ```.secret.txt```   
 
 ![](Assets//images/Snow_4.png)
 
