@@ -10,7 +10,7 @@
 * [Forensics](#Forensics)
   - [LSB fun](#LSB-fun)
   - [Snow](#Snow)
-  - [is it a troll???](#is-it-a-troll???)
+  - [is it a troll???](#is-it-a-troll)
  
 * [Crypto](#Crypto)
   - [RSA-Warmup](#RSA-Warmup)
